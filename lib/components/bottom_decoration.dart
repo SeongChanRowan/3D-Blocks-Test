@@ -16,7 +16,7 @@ class BottomDecoration extends SpriteComponent with CollisionCallbacks {
     anchor = Anchor.bottomCenter;
 
     final defaultPaint = Paint()
-      ..color = const Color.fromARGB(134, 255, 86, 86)
+      ..color = const Color.fromARGB(135, 255, 86, 86)
       ..style = PaintingStyle.fill;
 
     Vector2 startingPos = Vector2(100, 60);
@@ -26,7 +26,7 @@ class BottomDecoration extends SpriteComponent with CollisionCallbacks {
       startingPos,
       startingPos + Vector2(startingSize.x / 2, startingSize.y / 4),
       startingPos +
-          Vector2(startingSize.x / 2, startingSize.y = startingSize.y / 2),
+          Vector2(startingSize.x / 2, startingSize.y + startingSize.y / 2),
       startingPos + Vector2(0, startingSize.y),
     ])
       ..paint = defaultPaint

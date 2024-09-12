@@ -1,20 +1,32 @@
+import 'package:three_d_blocks_test/components/game_loop.dart';
+
+import 'package:flame/flame.dart';
+import 'package:flame/game.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
-}
+  WidgetsFlutterBinding.ensureInitialized();
+  Flame.device.fullScreen();
+  Flame.device.setPortraitUpOnly();
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  GameLoop game = GameLoop();
+  runApp(GameWidget(
+    game: kDebugMode ? GameLoop() : game,
+    backgroundBuilder: (context) {
+      return Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+                colors: [Color(0xFF058bde), Color(0xFFe0f0fa)],
+              ),
+            ),
+          ),
+        ],
+      );
+    },
+  ));
 }

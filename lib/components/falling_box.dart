@@ -7,13 +7,14 @@ class FallingBox extends SpriteComponent with CollisionCallbacks {
       {required this.imgPath,
       required this.startingPosition,
       required this.positionCollisionBox,
-      required this.collisionBox})
+      this.collisionBox})
       : super(scale: Vector2(.5, .5));
 
   final String imgPath;
-  final Vector2 collisionBox;
+  final Vector2? collisionBox;
   final Vector2 startingPosition;
-  final Vector2 positionCollisionBox;
+  Vector2 positionCollisionBox;
+
   late ShapeHitbox hitbox;
 
   static const double SPEED = 100;
@@ -22,6 +23,7 @@ class FallingBox extends SpriteComponent with CollisionCallbacks {
 
   @override
   Future<void> onLoad() async {
+    print("Loaded");
     sprite = await Sprite.load(imgPath);
     position = startingPosition;
     anchor = Anchor.center;
@@ -50,7 +52,6 @@ class FallingBox extends SpriteComponent with CollisionCallbacks {
   @override
   void update(double dt) {
     super.update(dt);
-
     if (!isFalling) return;
 
     position += Vector2(0, 2) * dt * SPEED * acceleration;
