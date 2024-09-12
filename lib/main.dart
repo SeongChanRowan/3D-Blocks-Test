@@ -4,6 +4,7 @@ import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:three_d_blocks_test/utils/background_decoration.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,15 +17,8 @@ void main() {
     backgroundBuilder: (context) {
       return Stack(
         children: [
-          Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.bottomCenter,
-                end: Alignment.topCenter,
-                colors: [Color(0xFF058bde), Color(0xFFe0f0fa)],
-              ),
-            ),
-          ),
+          Container(color: const Color.fromARGB(255, 133, 172, 255)),
+          const BackgroundDecoration(),
         ],
       );
     },
