@@ -32,5 +32,7 @@ class BottomDecoration extends SpriteComponent with CollisionCallbacks {
       ..paint = defaultPaint
       ..collisionType = CollisionType.passive
       ..renderShape = true;
+
+    add(hitbox);
   }
 }
