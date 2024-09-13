@@ -45,8 +45,8 @@ class CurvePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final Color color2 = Color.fromARGB(183, 19, 165, 255);
-    final Color color1 = Color.fromARGB(166, 42, 173, 255);
+    const Color color2 = Color.fromRGBO(224, 80, 104, 0.85);
+    const Color color1 = Color.fromRGBO(246, 205, 214, 0.85);
 
     for (var i = -10; i < 14; i++) {
       double yOffset = 150.0 * i + animation.value;
@@ -66,7 +66,7 @@ class CurvePainter extends CustomPainter {
 
     if (size.width < size.height) {
       Paint grayPaint = Paint()
-        ..color = Color(0xFF555f75)
+        ..color = const Color(0xFF555f75)
         ..style = PaintingStyle.fill;
 
       Path path = Path();
