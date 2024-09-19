@@ -27,7 +27,7 @@ class FadingText extends ShapeComponent {
       style: TextStyle(
         fontSize: textSize,
         fontWeight: FontWeight.bold,
-        color: Colors.pinkAccent,
+        color: Colors.white,
       ),
     );
     anchor = Anchor.center;

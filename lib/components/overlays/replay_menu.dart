@@ -95,7 +95,7 @@ class _ReplayMenuState extends State<ReplayMenu> {
               ),
             ),
             Positioned(
-              top: 30, // Adjust this value according to your preference
+              top: 30,
               child: SizedBox(
                 width: 200,
                 child: Image.asset("assets/images/logo_with_text.png"),

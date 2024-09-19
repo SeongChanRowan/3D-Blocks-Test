@@ -48,8 +48,7 @@ class _MainMenuState extends State<MainMenu>
                   return Transform.scale(
                     scale: _animation.value,
                     child: SizedBox(
-                      width: 400, // Adjust the width as needed
-
+                      width: 400,
                       child: Column(
                         children: [
                           Container(

@@ -84,7 +84,7 @@ class CraneCable extends SpriteComponent {
     print("Spawning box");
     enabled = true;
     player = PlayerFactory.createPlayer(
-        Vector2(absoluteScaledSize.x / 2, absoluteScaledSize.y));
+        Vector2(absoluteScaledSize.x / 2, absoluteScaledSize.y / 2));
     player.isFalling = false;
     player.parent = this;
     player.anchor = Anchor.topLeft;

@@ -7,7 +7,6 @@ import 'package:three_d_blocks_test/components/overlays/replay_menu.dart';
 import 'package:three_d_blocks_test/components/overlays/utils/hover_image.dart';
 import 'package:three_d_blocks_test/screens/game_loop.dart';
 import 'package:three_d_blocks_test/stack_over.dart';
-import 'package:three_d_blocks_test/utils/background_decoration.dart';
 
 void main() async {
   // initiate flame configuration
@@ -113,8 +112,7 @@ void main() async {
     backgroundBuilder: (context) {
       return Stack(
         children: [
-          Container(color: const Color.fromARGB(255, 133, 172, 255)),
-          const BackgroundDecoration(),
+          Container(color: const Color.fromRGBO(224, 80, 104, 0.85)),
         ],
       );
     },
