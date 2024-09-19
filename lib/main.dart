@@ -31,8 +31,9 @@ void main() async {
         MainMenu.id,
         LogoOverlay.id,
       ],
-      backgroundBuilder: (context) =>
-          Container(color: const Color.fromRGBO(224, 80, 104, 0.85)),
+      backgroundBuilder: (context) => Container(
+        color: const Color.fromRGBO(224, 80, 104, 0.85),
+      ),
       gameFactory: () => StackOver(),
     ),
   );
