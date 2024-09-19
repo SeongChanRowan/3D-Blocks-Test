@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flame/components.dart';
-import 'package:three_d_blocks_test/game/components/player.dart';
+import 'package:three_d_blocks_test/game/components/block/player.dart';
 import 'package:three_d_blocks_test/game/components/block/h2_box.dart';
 import 'package:three_d_blocks_test/game/screens/game_loop.dart';
 import 'package:three_d_blocks_test/game/static/game_state.dart';
@@ -85,7 +85,7 @@ class CraneCable extends SpriteComponent {
     enabled = true;
     player = H2Box(
         startingPosition:
-            Vector2(absoluteScaledSize.x / 2, absoluteScaledSize.y / 1.1));
+            Vector2(absoluteScaledSize.x / 2, absoluteScaledSize.y));
     player.isFalling = false;
     player.parent = this;
     player.anchor = Anchor.topLeft;

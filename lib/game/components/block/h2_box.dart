@@ -1,6 +1,6 @@
 import 'package:flame/components.dart';
 import 'package:flame/image_composition.dart';
-import 'package:three_d_blocks_test/game/components/player.dart';
+import 'package:three_d_blocks_test/game/components/block/player.dart';
 
 class H2Box extends MyPlayer {
   H2Box({
