@@ -1,7 +1,7 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:three_d_blocks_test/game/components/overlays/pause_button.dart';
-import 'package:three_d_blocks_test/game/components/overlays/utils/hover_image.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/pause_button.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/utils/hover_image.dart';
 import 'package:three_d_blocks_test/game/screens/game_loop.dart';
 import 'package:three_d_blocks_test/game/stack_over.dart';
 import 'package:three_d_blocks_test/game/static/game_state.dart';

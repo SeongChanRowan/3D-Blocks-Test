@@ -1,7 +1,7 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:three_d_blocks_test/game/components/overlays/pause_menu.dart';
-import 'package:three_d_blocks_test/game/components/overlays/utils/hover_image.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/pause_menu.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/utils/hover_image.dart';
 import 'package:three_d_blocks_test/game/stack_over.dart';
 
 // ignore: must_be_immutable
