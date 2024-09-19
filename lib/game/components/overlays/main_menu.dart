@@ -1,7 +1,7 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:three_d_blocks_test/screens/game_loop.dart';
-import 'package:three_d_blocks_test/stack_over.dart';
+import 'package:three_d_blocks_test/game/screens/game_loop.dart';
+import 'package:three_d_blocks_test/game/stack_over.dart';
 
 // ignore: must_be_immutable
 class MainMenu extends StatefulWidget {

@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flame/components.dart';
-import 'package:three_d_blocks_test/components/player.dart';
-import 'package:three_d_blocks_test/components/block/h2_box.dart';
-import 'package:three_d_blocks_test/screens/game_loop.dart';
-import 'package:three_d_blocks_test/static/game_state.dart';
+import 'package:three_d_blocks_test/game/components/player.dart';
+import 'package:three_d_blocks_test/game/components/block/h2_box.dart';
+import 'package:three_d_blocks_test/game/screens/game_loop.dart';
+import 'package:three_d_blocks_test/game/static/game_state.dart';
 
 class CraneCable extends SpriteComponent {
   CraneCable({required this.screenSize}) : super(scale: Vector2(1, 1));

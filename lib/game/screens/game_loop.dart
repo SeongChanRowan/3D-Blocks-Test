@@ -2,16 +2,16 @@ import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flame/events.dart';
 import 'package:flutter/material.dart';
-import 'package:three_d_blocks_test/components/block_deleter.dart';
-import 'package:three_d_blocks_test/components/bottom_decoration/bottom_decoration.dart';
-import 'package:three_d_blocks_test/components/crane/cable.dart';
-import 'package:three_d_blocks_test/components/fading_text.dart';
-import 'package:three_d_blocks_test/components/player.dart';
-import 'package:three_d_blocks_test/components/player_stack.dart';
-import 'package:three_d_blocks_test/components/score_board.dart';
-import 'package:three_d_blocks_test/stack_over.dart';
-import 'package:three_d_blocks_test/static/constants.dart';
-import 'package:three_d_blocks_test/static/game_state.dart';
+import 'package:three_d_blocks_test/game/components/block_deleter.dart';
+import 'package:three_d_blocks_test/game/components/bottom_decoration/bottom_decoration.dart';
+import 'package:three_d_blocks_test/game/components/crane/cable.dart';
+import 'package:three_d_blocks_test/game/components/fading_text.dart';
+import 'package:three_d_blocks_test/game/components/player.dart';
+import 'package:three_d_blocks_test/game/components/player_stack.dart';
+import 'package:three_d_blocks_test/game/components/score_board.dart';
+import 'package:three_d_blocks_test/game/stack_over.dart';
+import 'package:three_d_blocks_test/game/static/constants.dart';
+import 'package:three_d_blocks_test/game/static/game_state.dart';
 
 class GameLoop extends PositionComponent
     with TapCallbacks, HasCollisionDetection, HasGameReference<StackOver> {

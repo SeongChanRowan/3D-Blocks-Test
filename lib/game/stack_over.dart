@@ -2,7 +2,7 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flame/events.dart';
 
-import 'package:three_d_blocks_test/screens/game_loop.dart';
+import 'package:three_d_blocks_test/game/screens/game_loop.dart';
 
 class StackOver extends FlameGame {
   StackOver()

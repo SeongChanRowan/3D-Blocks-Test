@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/rendering.dart';
-import 'package:three_d_blocks_test/components/falling_box.dart';
-import 'package:three_d_blocks_test/screens/game_loop.dart';
-import 'package:three_d_blocks_test/static/game_state.dart';
+import 'package:three_d_blocks_test/game/components/falling_box.dart';
+import 'package:three_d_blocks_test/game/screens/game_loop.dart';
+import 'package:three_d_blocks_test/game/static/game_state.dart';
 
 /// This is the component responsible for handling the player stack
 /// cusotom behaviour and rendering the players based on their position

@@ -2,12 +2,12 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
-import 'package:three_d_blocks_test/components/block_deleter.dart';
-import 'package:three_d_blocks_test/components/falling_box.dart';
-import 'package:three_d_blocks_test/components/player_stack.dart';
-import 'package:three_d_blocks_test/screens/game_loop.dart';
-import 'package:three_d_blocks_test/static/constants.dart';
-import 'package:three_d_blocks_test/static/game_state.dart';
+import 'package:three_d_blocks_test/game/components/block_deleter.dart';
+import 'package:three_d_blocks_test/game/components/falling_box.dart';
+import 'package:three_d_blocks_test/game/components/player_stack.dart';
+import 'package:three_d_blocks_test/game/screens/game_loop.dart';
+import 'package:three_d_blocks_test/game/static/constants.dart';
+import 'package:three_d_blocks_test/game/static/game_state.dart';
 
 class MyPlayer extends FallingBox {
   MyPlayer({

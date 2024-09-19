@@ -2,11 +2,11 @@ import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:three_d_blocks_test/components/overlays/main_menu.dart';
-import 'package:three_d_blocks_test/components/overlays/replay_menu.dart';
-import 'package:three_d_blocks_test/components/overlays/utils/hover_image.dart';
-import 'package:three_d_blocks_test/screens/game_loop.dart';
-import 'package:three_d_blocks_test/stack_over.dart';
+import 'package:three_d_blocks_test/game/components/overlays/main_menu.dart';
+import 'package:three_d_blocks_test/game/components/overlays/replay_menu.dart';
+import 'package:three_d_blocks_test/game/components/overlays/utils/hover_image.dart';
+import 'package:three_d_blocks_test/game/screens/game_loop.dart';
+import 'package:three_d_blocks_test/game/stack_over.dart';
 
 void main() async {
   // initiate flame configuration

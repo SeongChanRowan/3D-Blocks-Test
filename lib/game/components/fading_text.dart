@@ -2,7 +2,7 @@ import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:three_d_blocks_test/static/game_state.dart';
+import 'package:three_d_blocks_test/game/static/game_state.dart';
 
 class FadingText extends ShapeComponent {
   FadingText({required this.point, required this.newPosition})
