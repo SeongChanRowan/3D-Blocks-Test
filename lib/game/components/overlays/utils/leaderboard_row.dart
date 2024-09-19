@@ -18,7 +18,9 @@ class LeaderboardRow extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        color: isCurrentUser ? Color.fromARGB(33, 0, 0, 0) : Colors.transparent,
+        color: isCurrentUser
+            ? const Color.fromARGB(33, 0, 0, 0)
+            : Colors.transparent,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,

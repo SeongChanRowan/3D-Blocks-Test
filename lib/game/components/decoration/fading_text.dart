@@ -1,7 +1,6 @@
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:three_d_blocks_test/game/static/game_state.dart';
 
 class FadingText extends ShapeComponent {

@@ -59,9 +59,9 @@ class GameLoop extends PositionComponent
     if (lowerByValue > 0) {
       double offset = Constants.SPEED * dt * 1.5;
       lowerByValue -= offset;
-      playerStackComponent.players.forEach((element) {
+      for (var element in playerStackComponent.players) {
         element.position = element.position + Vector2(0, offset);
-      });
+      }
     }
   }
 

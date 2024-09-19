@@ -12,24 +12,19 @@ import 'package:three_d_blocks_test/game/static/game_state.dart';
 class MyPlayer extends FallingBox {
   MyPlayer({
     required this.point,
-    required imgPath,
-    required startingPosition,
-    required collisionBox,
-    required positionCollisionBox,
-  }) : super(
-            imgPath: imgPath,
-            startingPosition: startingPosition,
-            collisionBox: collisionBox,
-            positionCollisionBox: positionCollisionBox,
-            customAnchor: Anchor.topCenter);
+    required super.imgPath,
+    required super.startingPosition,
+    required super.collisionBox,
+    required super.positionCollisionBox,
+  }) : super(customAnchor: Anchor.topCenter);
 
   int point;
   @override
-  void render(Canvas c) {
+  void render(Canvas canvas) {
     if (Constants.SHOW_COLLISION_BOX) {
-      super.renderDebugMode(c);
+      super.renderDebugMode(canvas);
     }
-    super.render(c);
+    super.render(canvas);
   }
 
   @override

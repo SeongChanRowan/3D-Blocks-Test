@@ -7,12 +7,12 @@ class HoverImage extends StatefulWidget {
   final bool landScape;
 
   const HoverImage({
-    Key? key,
+    super.key,
     required this.normalImage,
     required this.hoverImage,
     required this.onPressed,
     this.landScape = false,
-  }) : super(key: key);
+  });
 
   @override
   _HoverImageState createState() => _HoverImageState();

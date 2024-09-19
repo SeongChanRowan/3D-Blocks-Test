@@ -32,8 +32,8 @@ class CraneCable extends SpriteComponent {
   }
 
   @override
-  void onGameResize(Vector2 gameSize) {
-    super.onGameResize(gameSize);
+  void onGameResize(Vector2 size) {
+    super.onGameResize(size);
     resetPosition();
   }
 

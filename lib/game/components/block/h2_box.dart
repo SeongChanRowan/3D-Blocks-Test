@@ -4,11 +4,10 @@ import 'package:three_d_blocks_test/game/components/block/player.dart';
 
 class H2Box extends MyPlayer {
   H2Box({
-    required startingPosition,
+    required super.startingPosition,
   }) : super(
           point: 100,
           imgPath: 'block.png',
-          startingPosition: startingPosition,
           collisionBox: Vector2(201, 125),
           positionCollisionBox: Vector2(50, -20),
         );
