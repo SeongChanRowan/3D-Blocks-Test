@@ -13,7 +13,6 @@ class FallingBox extends PositionComponent with CollisionCallbacks {
       {required this.imgPath,
       required this.startingPosition,
       required this.positionCollisionBox,
-      this.animationName,
       this.collisionBox,
       this.isFalling = true,
       this.customAnchor = Anchor.bottomCenter})
@@ -23,7 +22,6 @@ class FallingBox extends PositionComponent with CollisionCallbacks {
   final Vector2? collisionBox;
   final Vector2 startingPosition;
   final Anchor customAnchor;
-  final String? animationName;
   Vector2 positionCollisionBox;
   bool isFalling;
 

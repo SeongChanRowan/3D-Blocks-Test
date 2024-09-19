@@ -15,8 +15,7 @@ class PlayerFactory {
 
     switch (randomPlayerType) {
       case 'toaster':
-        return Toaster(
-            startingPosition: startingPosition, animationName: "toaster");
+        return Toaster(startingPosition: startingPosition);
       default:
         throw Exception('Invalid player type');
     }

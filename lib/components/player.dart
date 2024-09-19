@@ -16,13 +16,11 @@ class MyPlayer extends FallingBox {
     required startingPosition,
     required collisionBox,
     required positionCollisionBox,
-    animationName,
   }) : super(
             imgPath: imgPath,
             startingPosition: startingPosition,
             collisionBox: collisionBox,
             positionCollisionBox: positionCollisionBox,
-            animationName: animationName,
             customAnchor: Anchor.topCenter);
 
   int point;
