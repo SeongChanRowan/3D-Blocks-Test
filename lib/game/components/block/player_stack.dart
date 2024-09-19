@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/rendering.dart';
-import 'package:three_d_blocks_test/game/components/falling_box.dart';
+import 'package:three_d_blocks_test/game/components/block/falling_box.dart';
 import 'package:three_d_blocks_test/game/screens/game_loop.dart';
 import 'package:three_d_blocks_test/game/static/game_state.dart';
 

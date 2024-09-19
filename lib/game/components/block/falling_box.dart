@@ -5,7 +5,7 @@ import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
 import 'package:flame/particles.dart';
 import 'package:flutter/material.dart';
-import 'package:three_d_blocks_test/game/components/block_deleter.dart';
+import 'package:three_d_blocks_test/game/components/block/block_deleter.dart';
 import 'package:three_d_blocks_test/game/static/constants.dart';
 
 class FallingBox extends PositionComponent with CollisionCallbacks {

@@ -1,5 +1,5 @@
 import 'package:flame/components.dart';
-import 'package:three_d_blocks_test/game/components/falling_box.dart';
+import 'package:three_d_blocks_test/game/components/block/falling_box.dart';
 
 class BottomDecoration extends FallingBox {
   BottomDecoration({required Vector2 startingPosition})
