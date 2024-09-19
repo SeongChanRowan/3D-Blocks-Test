@@ -3,7 +3,7 @@ import 'dart:math' as math;
 
 import 'package:flame/components.dart';
 import 'package:three_d_blocks_test/components/player.dart';
-import 'package:three_d_blocks_test/components/players/player_factory.dart';
+import 'package:three_d_blocks_test/components/block/h2_box.dart';
 import 'package:three_d_blocks_test/screens/game_loop.dart';
 import 'package:three_d_blocks_test/static/game_state.dart';
 
@@ -83,8 +83,9 @@ class CraneCable extends SpriteComponent {
   void spawnBox() {
     print("Spawning box");
     enabled = true;
-    player = PlayerFactory.createPlayer(
-        Vector2(absoluteScaledSize.x / 2, absoluteScaledSize.y / 2));
+    player = H2Box(
+        startingPosition:
+            Vector2(absoluteScaledSize.x / 2, absoluteScaledSize.y / 1.1));
     player.isFalling = false;
     player.parent = this;
     player.anchor = Anchor.topLeft;

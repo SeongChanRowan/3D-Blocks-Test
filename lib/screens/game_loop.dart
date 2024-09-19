@@ -3,7 +3,7 @@ import 'package:flame/effects.dart';
 import 'package:flame/events.dart';
 import 'package:flutter/material.dart';
 import 'package:three_d_blocks_test/components/block_deleter.dart';
-import 'package:three_d_blocks_test/components/bottom_decoration.dart';
+import 'package:three_d_blocks_test/components/bottom_decoration/bottom_decoration.dart';
 import 'package:three_d_blocks_test/components/crane/cable.dart';
 import 'package:three_d_blocks_test/components/fading_text.dart';
 import 'package:three_d_blocks_test/components/player.dart';

@@ -2,11 +2,11 @@ import 'package:flame/components.dart';
 import 'package:flame/image_composition.dart';
 import 'package:three_d_blocks_test/components/player.dart';
 
-class Toaster extends MyPlayer {
-  Toaster({
+class H2Box extends MyPlayer {
+  H2Box({
     required startingPosition,
   }) : super(
-          point: 1200,
+          point: 100,
           imgPath: 'block.png',
           startingPosition: startingPosition,
           collisionBox: Vector2(201, 125),
