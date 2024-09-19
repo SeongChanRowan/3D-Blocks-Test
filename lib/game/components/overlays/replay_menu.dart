@@ -1,5 +1,6 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'package:three_d_blocks_test/game/components/overlays/pause_button.dart';
 import 'package:three_d_blocks_test/game/components/overlays/utils/hover_image.dart';
 import 'package:three_d_blocks_test/game/screens/game_loop.dart';
 import 'package:three_d_blocks_test/game/stack_over.dart';
@@ -83,7 +84,7 @@ class _ReplayMenuState extends State<ReplayMenu> {
                                 .remove(ReplayMenu.id);
                             (widget.game as FlameGame)
                                 .overlays
-                                .add('pause-overlay');
+                                .add(PauseButton.id);
                             ((widget.game as StackOver).world.children.first
                                     as GameLoop)
                                 .startGame();
