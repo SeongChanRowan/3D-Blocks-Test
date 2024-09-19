@@ -22,13 +22,13 @@ class CraneCable extends SpriteComponent {
   late MyPlayer player;
 
   int currentpoint = 0;
-  // late Image image;
 
   @override
   Future<void> onLoad() async {
     sprite = await Sprite.load("crane_body.png");
     anchor = Anchor.topCenter;
     position = Vector2(screenSize.x / 2, -absoluteScaledSize.y / 2);
+    priority = 10000000;
   }
 
   @override

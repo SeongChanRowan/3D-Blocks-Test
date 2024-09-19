@@ -39,9 +39,11 @@ class GameLoop extends PositionComponent
         givenPosition: Vector2(size.x / 2, size.y / 2));
     add(scoreBoard);
 
+    // 세로
     add(BlockDeleter(
         collisionBoxPosition: Vector2(-2000, size.y - 350),
         collisionBoxSize: Vector2(6000, 200)));
+    // 가로
     add(BlockDeleter(
         collisionBoxPosition: Vector2(0, 3 * size.y),
         collisionBoxSize: Vector2(size.x * 3, 200)));

@@ -11,10 +11,7 @@ import 'package:three_d_blocks_test/game/static/game_state.dart';
 /// on imaginary z-axis.
 class PlayerStack extends PositionComponent {
   PlayerStack(Vector2 size)
-      : super(
-          size: size,
-          position: Vector2(size.x / 2, size.y),
-        );
+      : super(size: size, position: Vector2(size.x / 2, size.y));
 
   List<FallingBox> players = [];
 

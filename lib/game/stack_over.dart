@@ -21,9 +21,7 @@ class FixedResolutionWorld extends World
     with HasGameReference, TapCallbacks, DoubleTapCallbacks {
   @override
   Future<void> onLoad() async {
-    add(
-      GameLoop()..anchor = Anchor.center,
-    );
+    add(GameLoop()..anchor = Anchor.center);
     super.onLoad();
   }
 }

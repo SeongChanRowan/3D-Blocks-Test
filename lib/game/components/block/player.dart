@@ -48,14 +48,16 @@ class MyPlayer extends FallingBox {
         (parent!.parent as GameLoop).lowerByValue += hitbox!.size.y / 3;
       }
 
-      add(ScaleEffect.to(
-        Vector2(scale.x - 0.01, scale.y - 0.1),
-        EffectController(
-          duration: 0.1,
-          alternate: true,
-          infinite: false,
+      add(
+        ScaleEffect.to(
+          Vector2(scale.x - 0.01, scale.y - 0.1),
+          EffectController(
+            duration: 0.1,
+            alternate: true,
+            infinite: false,
+          ),
         ),
-      ));
+      );
     }
   }
 
