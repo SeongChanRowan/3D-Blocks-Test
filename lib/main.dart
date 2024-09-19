@@ -1,12 +1,12 @@
 import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:three_d_blocks_test/game/components/overlays/logo_overlay.dart';
-import 'package:three_d_blocks_test/game/components/overlays/main_menu.dart';
-import 'package:three_d_blocks_test/game/components/overlays/pause_button.dart';
-import 'package:three_d_blocks_test/game/components/overlays/pause_menu.dart';
-import 'package:three_d_blocks_test/game/components/overlays/replay_menu.dart';
-import 'package:three_d_blocks_test/game/components/overlays/tap_overlay.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/logo_overlay.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/main_menu.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/pause_button.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/pause_menu.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/replay_menu.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/tap_overlay.dart';
 import 'package:three_d_blocks_test/game/stack_over.dart';
 
 void main() async {
@@ -31,9 +31,8 @@ void main() async {
         MainMenu.id,
         LogoOverlay.id,
       ],
-      backgroundBuilder: (context) {
-        return Container(color: const Color.fromRGBO(224, 80, 104, 0.85));
-      },
+      backgroundBuilder: (context) =>
+          Container(color: const Color.fromRGBO(224, 80, 104, 0.85)),
       gameFactory: () => StackOver(),
     ),
   );

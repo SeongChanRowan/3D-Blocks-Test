@@ -9,8 +9,8 @@ import 'package:three_d_blocks_test/game/components/decoration/fading_text.dart'
 import 'package:three_d_blocks_test/game/components/block/player.dart';
 import 'package:three_d_blocks_test/game/components/block/player_stack.dart';
 import 'package:three_d_blocks_test/game/components/decoration/score_board.dart';
-import 'package:three_d_blocks_test/game/components/overlays/pause_button.dart';
-import 'package:three_d_blocks_test/game/components/overlays/replay_menu.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/pause_button.dart';
+import 'package:three_d_blocks_test/game/components/%08widgets/replay_menu.dart';
 import 'package:three_d_blocks_test/game/stack_over.dart';
 import 'package:three_d_blocks_test/game/static/constants.dart';
 import 'package:three_d_blocks_test/game/static/game_state.dart';
