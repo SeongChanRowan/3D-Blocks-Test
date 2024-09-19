@@ -11,6 +11,8 @@ class ReplayMenu extends StatefulWidget {
   Object? game;
   int score;
 
+  static const id = 'ReplayMenu';
+
   @override
   State<ReplayMenu> createState() => _ReplayMenuState();
 }
@@ -78,7 +80,7 @@ class _ReplayMenuState extends State<ReplayMenu> {
                           onPressed: () {
                             (widget.game as FlameGame)
                                 .overlays
-                                .remove('replay-menu');
+                                .remove(ReplayMenu.id);
                             (widget.game as FlameGame)
                                 .overlays
                                 .add('pause-overlay');

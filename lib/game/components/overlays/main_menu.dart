@@ -1,5 +1,7 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'package:three_d_blocks_test/game/components/overlays/logo_overlay.dart';
+import 'package:three_d_blocks_test/game/components/overlays/pause_button.dart';
 import 'package:three_d_blocks_test/game/screens/game_loop.dart';
 import 'package:three_d_blocks_test/game/stack_over.dart';
 
@@ -7,6 +9,8 @@ import 'package:three_d_blocks_test/game/stack_over.dart';
 class MainMenu extends StatefulWidget {
   MainMenu(this.game, {super.key});
   Object? game;
+
+  static const id = 'MainMenu';
 
   @override
   _MainMenuState createState() => _MainMenuState();
@@ -81,9 +85,9 @@ class _MainMenuState extends State<MainMenu>
         ),
       ),
       onTap: () {
-        (widget.game as FlameGame).overlays.remove('menu');
-        (widget.game as FlameGame).overlays.remove('utilities-overlay');
-        (widget.game as StackOver).overlays.add('pause-overlay');
+        (widget.game as FlameGame).overlays.remove(MainMenu.id);
+        (widget.game as FlameGame).overlays.remove(LogoOverlay.id);
+        (widget.game as StackOver).overlays.add(PauseButton.id);
         ((widget.game as StackOver).world.children.first as GameLoop)
             .startGame();
       },

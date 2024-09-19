@@ -9,6 +9,8 @@ import 'package:three_d_blocks_test/game/components/decoration/fading_text.dart'
 import 'package:three_d_blocks_test/game/components/block/player.dart';
 import 'package:three_d_blocks_test/game/components/block/player_stack.dart';
 import 'package:three_d_blocks_test/game/components/decoration/score_board.dart';
+import 'package:three_d_blocks_test/game/components/overlays/pause_button.dart';
+import 'package:three_d_blocks_test/game/components/overlays/replay_menu.dart';
 import 'package:three_d_blocks_test/game/stack_over.dart';
 import 'package:three_d_blocks_test/game/static/constants.dart';
 import 'package:three_d_blocks_test/game/static/game_state.dart';
@@ -107,8 +109,8 @@ class GameLoop extends PositionComponent
 
     // startGame();
     print("Game reset ${GameState.score}");
-    game.overlays.add('replay-menu');
-    game.overlays.remove('pause-overlay');
+    game.overlays.add(ReplayMenu.id);
+    game.overlays.remove(PauseButton.id);
   }
 
   void givePoint() {
